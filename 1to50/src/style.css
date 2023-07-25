@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameTitle {
+  font-size: 4em;
+  font-weight: bold;
+  color: #6e48b3;
+}
+
+.controlBox {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+
+  & > div {
+    background-color: #7cb9f6;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+
+.boxWrap {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 5fr);
+  grid-template-rows: repeat(5, 5fr);
+  grid-gap: 5px;
+
+  & > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .active {
+    background-color: antiquewhite;
+    cursor: pointer;
+  }
+
+  .inactive {
+    background-color: rgb(219, 219, 219);
+  }
+}
